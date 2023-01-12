@@ -1,0 +1,89 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+ul{}
+
+.wrap{
+    width: 800px;
+    margin: 100px auto 0;
+
+}
+.wrap .main{
+
+}
+.wrap .main .your-class{
+    height: 500px;
+}
+.wrap .main .your-class .slick-slide{
+    height: 500px;
+}
+
+.wrap .main .your-class .slick-slide .video{
+    width: 100%;
+}
+
+.wrap .main .your-class .slick-arrow{
+    position: absolute;
+    top: calc(50% - 10px);
+    font-size: 0; 
+    /*폰트 기본값은 16px 크롬에서는 최소 폰트크기가 10px이기 때문에
+    8px(10px 아래로) --> 적용안됨*/
+    visibility: hidden; /*prev,next 안보이게*/
+
+
+}
+.wrap .main .your-class .slick-prev{
+    z-index: 10;
+    left: 3%;
+    
+
+}
+.wrap .main .your-class .slick-next{
+    right: 3%;
+    
+
+}
+
+.wrap .main .your-class .slick-prev::after{
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: white;
+
+}
+
+.wrap .main .your-class .slick-next::after{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: white;
+
+}
+.wrap .main .your-class .slick-dots{
+    text-align: center;
+}
+.wrap .main .your-class .slick-dots li{
+    display: inline-block;
+    margin: 20px 5px 0;
+}
+.wrap .main .your-class .slick-dots li button{
+    border: none;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /*버튼 모양 원*/
+    background-color: #999;
+   
+    
+}
+.wrap .main .your-class .slick-dots li.slick-active button{
+    background-color: darkkhaki;
+    width: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    
+}
